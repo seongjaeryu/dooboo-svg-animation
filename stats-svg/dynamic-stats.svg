@@ -1,0 +1,126 @@
+<svg width="194" height="224" viewBox="0 0 100% 100%" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+    <ref id="paramNumber" param="statNumber" default="1"/>
+    <ref id="paramPercent" param="statPercent" default="100"/>
+    <ref id="paramColor" param="color" default="#FFFFFF"/>
+</defs>
+<!-- <script>
+    var n = document.getElementById("url(#paramNumber)")
+    var p = document.getElementById("url(#paramPercent)")
+    var y2float = 88 - 80 * "url(#p)"
+    var rotateint = "url(#n)" * 60 - 60
+</script> -->
+<style>
+    .path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 2.5s ease-in-out forwards;
+        animation-delay: 1.5s
+    }
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+    .circle{ 
+        animation: circleShifter 1s ease-in-out forwards;
+        animation-delay: 1.5s
+    }
+    @keyframes circleShifter {
+        0% {
+            r: 0;
+            transform-origin: center;
+        }
+        50% {
+            r: 0;
+            transform-origin: center;
+        }
+        75% {
+            r: 7;
+            transform-origin: center;
+        }	
+        100% {
+            r:6 ;
+            transform-origin: center;
+        }
+    }
+    .delayedDim{
+        animation: dimmer 1s ease-in-out forwards;
+        animation-delay: 1.2s
+    }
+    @keyframes dimmer{
+        from {
+            opacity:1;
+        }
+        to {
+            opacity:0.3;
+        }
+    }
+</style>
+<!-- Background Lines -->
+<g opacity="0.3">
+    <path d="M96.9999 88.5773L117.28 100.289V123.711L96.9999 135.423L76.7 123.711V100.289L96.9999 88.5773Z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.92" d="M96.9999 80.5774L124.2 96.2886V127.711L96.9999 143.423L69.78 127.711V96.2887L96.9999 80.5774Z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.84" d="M97 72.5774L131.14 92.2887V131.711L97 151.423L62.86 131.711V92.2887L97 72.5774Z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.76" d="M96.9999 64.5773L138.06 88.2886V135.711L96.9999 159.423L55.92 135.711V88.2887L96.9999 64.5773Z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.68" d="M97 56.5773L145 84.2887V139.711L97 167.423L49 139.711V84.2887L97 56.5773Z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.6" d="M97 48.5774L151.92 80.2887V143.711L97 175.423L42.08 143.711V80.2887L97 48.5774Z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.52" d="M97 40.5774L158.84 76.2886V147.711L97 183.423L35.14 147.711V76.2887L97 40.5774Z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.44" d="M97 32.5774L165.78 72.2887V151.711L97 191.423L28.22 151.711V72.2887L97 32.5774Z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.36" d="M97 24.5774L172.7 68.2887V155.711L97 199.423L21.28 155.711V68.2887L97 24.5774Z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.28" d="M97 16.5773L179.64 64.2887V159.711L97 207.423L14.36 159.711V64.2887L97 16.5773Z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.2" d="M97 8.57734L186.56 60.2887V163.711L97 215.423L7.42 163.711V60.2887L97 8.57734Z" stroke="white" stroke-opacity="0.3"/>
+    <path d="M97 0.577344L193.5 56.2887V167.711L97 223.423L0.5 167.711V56.2887L97 0.577344Z" stroke="white" stroke-opacity="0.3"/>
+    <path d="M193.5 167.5L0.5 56.5" stroke="white" stroke-opacity="0.3" stroke-linecap="round"/>
+    <path d="M193.5 167.5L97 112L117 123.5" stroke="white" stroke-opacity="0.3" stroke-linecap="round"/>
+    <path d="M193.5 56.5L0.5 167.5" stroke="white" stroke-opacity="0.3" stroke-linecap="round"/>
+    <path d="M97 0.5V223" stroke="white" stroke-opacity="0.3" stroke-linecap="round"/>
+    </g>
+<!-- Background Stats -->
+<g class="delayedDim">
+    <path id="currentStats"
+        d="M96.9999 88.5773L117.28 100.289V123.711L96.9999 135.423L76.7 123.711V100.289L96.9999 88.5773Z"
+        fill="url(#statsGradient)"
+        />
+    <animate xlink:href="#currentStats"
+        attributeName="d"
+        attributeType="XML"
+        from="M96.9999 88.5773L117.28 100.289V123.711L96.9999 135.423L76.7 123.711V100.289L96.9999 88.5773Z"
+        to="M97 9.57734L186.56 61.2887V164.711L97 216.423L7.42 164.711V61.2887L97 9.57734Z"
+        dur="0.7s"
+        begin="0s"
+        fill="freeze"/>
+    <defs>
+        <linearGradient id="statsGradient" x1="110.32" y1="9.5" x2="110.32" y2="216" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#D172FF"/>
+            <stop offset="0.505208" stop-color="#5997EB"/>
+            <stop offset="1" stop-color="#D0DBDB"/>
+            </linearGradient>
+        </defs>
+    </g>
+<!-- Current Achievement -->
+<g transform="rotate(60)" transform-origin="center">
+    <line class="path" x1="97" y1="112" x2="97" y2="8" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+    <circle class="circle" r="0" cx="97" cy="8" fill="white"/>
+    </g>
+</svg>
+
+
+
+<!-- 0%(MIN) Stat d = "M96.9999 88.5773L117.28 100.289V123.711L96.9999 135.423L76.7 123.711V100.289L96.9999 88.5773Z" -->
+<!-- 100%(MAX) Stat d = "M97 9.57734L186.56 61.2887V164.711L97 216.423L7.42 164.711V61.2887L97 9.57734Z" -->
+<!-- Sample Stat d = "M166 152L186 61L97 9.5L34.64 76V148L97 216L166 152Z" -->
+
+
+<!-- if width, height = 194, 224 -->
+<!-- rotate angle = ( 60 * typenumber - 60 ) -->
+<!-- y1 = 112 -->
+<!-- y2 = ( 88 - 80 * ratio ) -->
+<!-- x1 = 97 -->
+<!-- x2 = 97 -->
+
+<!-- Sample Below for 100% Stats 2nd Item-->
+<!-- <g transform="rotate(60)" transform-origin="center">
+    <line class="path" x1="97" y1="112" x2="97" y2="8" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <circle class="shape" r="6" cx="97" cy="8" fill="white"/>
+    </g> -->
