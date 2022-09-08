@@ -10,3 +10,7 @@ wannabe a doobooish designer
 - Testing Figma to draw the shapes for morphing animation
 - Simplifying messy decimal point
 - Ideating how to get simplified coordinates easily
+
+## TODO List
+- SVG: Applying __Ref property__ `<ref id="paramPercent" param="statPercent" default="100"/>`
+- SVG: Applying __formula__ e.g. `var position_y2 = 88 - 80 * "url(#paramPercent)"`
