@@ -14,3 +14,10 @@ wannabe a doobooish designer
 ## TODO List
 - SVG: Applying __Ref property__ `<ref id="paramPercent" param="statPercent" default="100"/>`
 - SVG: Applying __formula__ e.g. `var position_y2 = 88 - 80 * "url(#paramPercent)"`
+
+
+
+## Sample SVG
+
+- ![](./stats-svg/dynamic-stats.svg)
+- ![](./stats-svg/dynamic-stats-points.svg)
