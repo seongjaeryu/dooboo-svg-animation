@@ -1,0 +1,173 @@
+<svg width="194" height="224" viewBox="0 0 100% 100%" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+    <ref id="paramNumber" param="statNumber" default="1"/>
+    <ref id="paramPercent" param="statPercent" default="100"/>
+    <ref id="paramColor" param="color" default="#FFFFFF"/>
+</defs>
+<!-- <script>
+    var n = document.getElementById("url(#paramNumber)")
+    var p = document.getElementById("url(#paramPercent)")
+    var y2float = 88 - 80 * "url(#p)"
+    var rotateint = "url(#n)" * 60 - 60
+</script> -->
+<style>
+    .path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 2.5s ease-in-out forwards;
+        animation-delay: 3.2s
+    }
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+    .circle{ 
+        animation: circleShifter 1s ease-in-out forwards;
+        animation-delay: 3.2s
+    }
+    @keyframes circleShifter {
+        0% {
+            r: 0;
+            transform-origin: center;
+        }
+        50% {
+            r: 0;
+            transform-origin: center;
+        }
+        75% {
+            r: 7;
+            transform-origin: center;
+        }	
+        100% {
+            r:6 ;
+            transform-origin: center;
+        }
+    }
+    .delayedDim30{
+        animation: dimmer30 1s ease-in-out forwards;
+        animation-delay: 3s
+    }
+    @keyframes dimmer30{
+        from {
+            opacity:1;
+        }
+        to {
+            opacity:0.3;
+        }
+    }
+</style>
+<!-- Background Lines -->
+<g opacity="0.3">
+    <path opacity="1" d="M97,88.6l20.3,11.7v23.4L97,135.4l-20.3-11.7v-23.4L97,88.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.92" d="M97,80.6l27.2,15.7v31.4L97,143.4l-27.2-15.7V96.3L97,80.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.84" d="M97,72.6l34.1,19.7v39.4L97,151.4l-34.1-19.7V92.3L97,72.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.76" d="M97,64.6l41.1,23.7v47.4L97,159.4l-41.1-23.7V88.3L97,64.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.68" d="M97,56.6l48,27.7v55.4l-48,27.7l-48-27.7V84.3L97,56.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.6" d="M97,48.6l54.9,31.7v63.4L97,175.4l-54.9-31.7V80.3L97,48.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.52" d="M97,40.6l61.8,35.7v71.4L97,183.4l-61.9-35.7V76.3L97,40.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.44" d="M97,32.6l68.8,39.7v79.4L97,191.4l-68.8-39.7V72.3L97,32.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.36" d="M97,24.6l75.7,43.7v87.4L97,199.4l-75.7-43.7V68.3L97,24.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.28" d="M97,16.6l82.6,47.7v95.4L97,207.4l-82.6-47.7V64.3L97,16.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="0.2" d="M97,8.6l89.6,51.7v103.4L97,215.4L7.4,163.7V60.3L97,8.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="1" d="M97,0.6l96.5,55.7v111.4L97,223.4L0.5,167.7V56.3L97,0.6z" stroke="white" stroke-opacity="0.3"/>
+    <path opacity="1" d="M193.5 167.5L0.5 56.5" stroke="white" stroke-opacity="0.3" stroke-linecap="round"/>
+    <path opacity="1" d="M193.5 167.5L97 112L117 123.5" stroke="white" stroke-opacity="0.3" stroke-linecap="round"/>
+    <path opacity="1" d="M193.5 56.5L0.5 167.5" stroke="white" stroke-opacity="0.3" stroke-linecap="round"/>
+    <path opacity="1" d="M97 0.5V223" stroke="white" stroke-opacity="0.3" stroke-linecap="round"/>
+    </g>
+<!-- Background Stats Loading -->
+<g class="delayedDim30">
+    <polygon id="loadingStats" fill="url(#statsGradient)"/>
+    <animate xlink:href="#loadingStats"
+        attributeName="points"
+        attributeType="XML"
+        values="
+            97,95.9 110.9,103.9 110.9,120.1 97,128.1 83,120.1 83,103.9 ;
+            97,86.6 119,99.3 119,124.7 97,137.4 75,124.7 75,99.3 ;
+            97,95.9 110.9,103.9 110.9,120.1 97,128.1 83,120.1 83,103.9 ;
+            97,86.6 119,99.3 119,124.7 97,137.4 75,124.7 75,99.3 ;
+            97,95.9 110.9,103.9 110.9,120.1 97,128.1 83,120.1 83,103.9 ;
+            97,95.9 110.9,103.9 110.9,120.1 97,128.1 83,120.1 83,103.9 ;
+        "
+        keytimes="
+            0;
+            0.1;
+            0.2;
+            0.5;
+            0.8;
+            1;
+        "
+        dur="2s"
+        />
+    <defs>
+        <linearGradient id="statsGradient" x1="110.32" y1="9.5" x2="110.32" y2="216" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#D172FF"/>
+            <stop offset="0.505208" stop-color="#5997EB"/>
+            <stop offset="1" stop-color="#D0DBDB"/>
+            </linearGradient>
+        </defs>
+    </g>
+
+
+<!-- Background Stats -->
+<g class="delayedDim30">
+    <polygon id="currentStats"
+        fill="url(#statsGradient)"
+        />
+    <animate xlink:href="#currentStats"
+        attributeName="points"
+        attributeType="XML"
+        from="97,95.9 110.9,103.9 110.9,120.1 97,128.1 83,120.1 83,103.9 "
+        to="97,32.6 186.4,60.6 165.5,151.4 97,206.2 42.1,143.7 21.3,68.3 "
+        dur="0.35s"
+        begin="2s"
+        fill="freeze"/>
+    <defs>
+        <linearGradient id="statsGradient" x1="110.32" y1="9.5" x2="110.32" y2="216" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#D172FF"/>
+            <stop offset="0.505208" stop-color="#5997EB"/>
+            <stop offset="1" stop-color="#D0DBDB"/>
+            </linearGradient>
+        </defs>
+    </g>
+<!-- Current Achievement -->
+<g transform="rotate(60)" transform-origin="center">
+    <line class="path" x1="97" y1="112" x2="97" y2="8" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+    <circle class="circle" r="0" cx="97" cy="8" fill="white"/>
+    </g>
+</svg>
+
+<!-- Avoid using 'scale' property in case of using 'stroke' property -->
+<!-- loading start <polygon points="97,95.9 110.9,103.9 110.9,120.1 97,128.1 83,120.1 83,103.9 "/> -->
+<!-- loading step (1.bigger) -->
+<!-- loading step (2.smaller) -->
+<!-- loading to base <polygon points="97,95.9 110.9,103.9 110.9,120.1 97,128.1 83,120.1 83,103.9 "/> -->
+
+
+<!-- base: from <polygon points="97,95.9 110.9,103.9 110.9,120.1 97,128.1 83,120.1 83,103.9 "/> -->
+<!-- result: to <polygon points="97,32.6 186.4,60.6 165.5,151.4 97,206.2 42.1,143.7 21.3,68.3 "/> -->
+
+
+
+<!-- to="M97, 215.4l-54.9-71.7V80.3L97, 48.6l89.6, 11.7l-34.6, 83.4L97, 215.4z" -->
+<!-- matrix(1,0,0,1,105,-107.933) -->
+
+<!-- 0%(MIN) Stat d = "M96.9999 88.5773L117.28 100.289V123.711L96.9999 135.423L76.7 123.711V100.289L96.9999 88.5773Z" -->
+<!-- 100%(MAX) Stat d = "M97 9.57734L186.56 61.2887V164.711L97 216.423L7.42 164.711V61.2887L97 9.57734Z" -->
+<!-- Sample Stat d = "M166 152L186 61L97 9.5L34.64 76V148L97 216L166 152Z" -->
+<!-- Sample Stat d = "M97, 215.4l-54.9-71.7V80.3L97, 48.6l89.6, 11.7l-34.6, 83.4L97, 215.4z" -->
+
+
+<!-- if width, height = 194, 224 -->
+<!-- rotate angle = ( 60 * typenumber - 60 ) -->
+<!-- y1 = 112 -->
+<!-- y2 = ( 88 - 80 * ratio ) -->
+<!-- x1 = 97 -->
+<!-- x2 = 97 -->
+
+<!-- Sample Below for 100% Stats 2nd Item-->
+<!-- <g transform="rotate(60)" transform-origin="center">
+    <line class="path" x1="97" y1="112" x2="97" y2="8" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <circle class="shape" r="6" cx="97" cy="8" fill="white"/>
+    </g> -->
