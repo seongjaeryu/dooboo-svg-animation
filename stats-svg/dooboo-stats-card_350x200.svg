@@ -5,15 +5,17 @@
 	<![CDATA[
 	@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=block");
 	.backgroundColor{fill:#26272D;}
+	.backgroundColorLine{stroke:#26272D;}
 	.backgroundInnerLineOpacity{opacity:1;}
 	.statBgLineStyle{fill:none; stroke:#FFFFFF; stroke-width:0.5; opacity:0.2;}
 	.statBgIconStyle{fill:#FFFFFF; opacity:0.2;}
-	.currentStatStyle{opacity:0.8; stroke:#FFFFFF; stroke-width:1;}
-	.textGithubIDStyle{font-family: "Inter";font-weight: 700;font-size: 20px; fill: #FFFFFF;}
-	.textSubtitleStyle{font-family: "Inter";font-weight: 300;font-size: 12px; fill: #FFFFFF; opacity:0.5;}
-	.textContentStyle{font-family: "Inter";font-weight: 700;font-size: 14px; fill: #FFFFFF; }
-	.textContentLabelStyle{font-family: "Inter";font-weight: 300;font-size: 10px; fill: #FFFFFF; opacity:0.5;}
-	.textInfoStyle{font-family: "Inter";font-weight: 300;font-size: 10px; fill: #FFFFFF; opacity:0.5;}
+	.currentStatsStyle{opacity:0.8; stroke:#FFFFFF; stroke-width:1;}
+	.currentStatsLoadingStyle{opacity:0.8; stroke:#FFFFFF; stroke-width:1;}
+	.textGithubIDStyle{font-family: "Inter", Sans-Serif;font-weight: 700;font-size: 20px; fill: #FFFFFF;}
+	.textSubtitleStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 12px; fill: #FFFFFF; opacity:0.5;}
+	.textContentStyle{font-family: "Inter", Sans-Serif;font-weight: 700;font-size: 14px; fill: #FFFFFF; }
+	.textContentLabelStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 10px; fill: #FFFFFF; opacity:0.5;}
+	.textInfoStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 10px; fill: #FFFFFF; opacity:0.5;}
 	]]>
 
 </style>
