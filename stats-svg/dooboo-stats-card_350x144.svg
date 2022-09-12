@@ -16,7 +16,7 @@
 	.textSubtitleStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 11px; fill: #FFFFFF; opacity:0.5;}
 	.textLabelStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 10px; fill: #FFFFFF; }
 	.textLabelSubStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 10px; fill: #FFFFFF; opacity:0.5;}
-	.textInfoStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 8.5px; fill: #FFFFFF; opacity:0.3;}
+	.textInfoStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 7px; fill: #FFFFFF; opacity:0.3;}
 	]]>
 
 </style>
@@ -174,6 +174,6 @@
 		<text x="152" y="72" class="textLabelStyle">Challenger</text>
 		<text x="152" y="86" class="textLabelSubStyle">Tier</text>
 	</g>
-	<a href="https://dooboo.io" target="_blank"><text id="textInfo" x="24" y="121" class="textInfoStyle">Designed by dooboolab.io</text></a>
+	<a href="https://dooboo.io" target="_blank"><text id="textInfo" x="24" y="122" class="textInfoStyle">Designed by dooboolab.io</text></a>
 </g>
 </svg>
